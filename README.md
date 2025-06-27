@@ -6,7 +6,7 @@ This serverless project automatically translates text between languages using **
 
 ## 📐 Architecture Diagram
 
-![Architecture](Amazon_Translate%20(1).jpg)
+![Amazon_Translate (1)](https://github.com/user-attachments/assets/aff9fab4-6e9d-44ab-bb47-2749606e0644)
 
 ---
 
@@ -20,7 +20,10 @@ This serverless project automatically translates text between languages using **
 3. The result is stored in the format:
 ```json
 {
-  "translated": "Bonjour le monde"
+    "original": "Hello world",
+    "translated": "Bonjour le monde",
+    "source": "en",
+    "target": "fr"
 }
 ```
 
@@ -40,9 +43,9 @@ translator-app/
 
 ## 🔧 Requirements
 
-- Terraform ≥ 1.0
+- Terraform ≥ 1.12.2
 - AWS CLI configured (`aws configure`)
-- Python 3.x + Boto3 (for local testing, optional)
+- Python 3.13.3 + Boto3 (for local testing, optional)
 
 ---
 
