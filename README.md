@@ -1,16 +1,16 @@
-# 🌍 Translator App using Amazon Translate
+# Translator App using Amazon Translate
 
 This serverless project automatically translates text between languages using **Amazon S3**, **AWS Lambda**, and **Amazon Translate**, all deployed using **Terraform**.
 
 ---
 
-## 📐 Architecture Diagram
+## Architecture Diagram
 
 ![Amazon_Translate (1)](https://github.com/user-attachments/assets/aff9fab4-6e9d-44ab-bb47-2749606e0644)
 
 ---
 
-## 🧩 How It Works
+## How It Works
 
 1. User uploads a `.json` file with original text and source/target languages to the **input S3 bucket**.
 2. The upload **triggers a Lambda function**, which:
@@ -41,7 +41,7 @@ translator-app/
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 - Terraform ≥ 1.12.2
 - AWS CLI configured (`aws configure`)
@@ -49,7 +49,7 @@ translator-app/
 
 ---
 
-## 🚀 Deploy with Terraform
+## Deploy with Terraform
 
 ```bash
 cd translator-app
@@ -67,7 +67,7 @@ This will create:
 
 ---
 
-## 🧠 Sample Lambda (handler.py)
+## Sample Lambda (handler.py)
 
 ```python
 import boto3
@@ -105,7 +105,7 @@ def lambda_handler(event, context):
 
 ---
 
-## ✅ Example Input File (upload to input bucket)
+## Example Input File (upload to input bucket)
 
 ```json
 {
@@ -117,6 +117,6 @@ def lambda_handler(event, context):
 
 ---
 
-## 📄 License
+## License
 
 MIT License
