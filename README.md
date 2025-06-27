@@ -54,6 +54,7 @@ translator-app/
 ```bash
 cd translator-app
 terraform init
+terraform plan
 terraform apply
 ```
 
